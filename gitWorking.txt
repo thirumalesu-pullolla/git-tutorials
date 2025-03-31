@@ -14,3 +14,5 @@ git push >> to add to cloud repository
 git log >> Gives in detail explanations of code commits in the project with time stamps and unique id's
 
 git show <commit_id>   >>>>>    will give you detailed info about the code changes.
+
+git remote add <short-name> <git-repository-link>

@@ -1,0 +1,10 @@
+Working directory >> Staging Area >> Local repository >> cloud repository
+
+
+git init >> one time to add a project as git repository
+
+git add >> to add files to staging area
+
+git commit >> to add files into local repository 
+
+git push >> to add to cloud repository 

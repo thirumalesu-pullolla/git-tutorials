@@ -1,0 +1,20 @@
+
+First download the git for windows from the official website.
+ 
+Run the installer and complete the installation with your preferred settings.
+
+check git version in cmd by giving command git --version
+
+Set your user name and email (these are used to track who makes changes):
+
+bash
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+Create folder in folder in file explorer , enter cmd in the file path location , from there it'll redirect to git.
+
+Now give give git init command to initialized an empty repository with that folder
+
+Now you are all set to practice git commands.
+
+Git creates an hidden folder in your project folder.

@@ -3,7 +3,7 @@ Working directory >> Staging Area >> Local repository >> cloud repository
 
 git init >> one time to add a project as git repository
 
-git add >> to add files to staging area
+git add >> to add files to staging area (git add . || git add -A  || )
 
 git commit >> to add files into local repository 
 
@@ -11,3 +11,6 @@ git push >> to add to cloud repository
 
 >>>>  Git always works as branches by default it is master branch , if different people wants to work on the same project             	then they have to create a different branch for that
 
+git log >> Gives in detail explanations of code commits in the project with time stamps and unique id's
+
+git show <commit_id>   >>>>>    will give you detailed info about the code changes.

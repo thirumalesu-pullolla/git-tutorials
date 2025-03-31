@@ -8,3 +8,6 @@ git add >> to add files to staging area
 git commit >> to add files into local repository 
 
 git push >> to add to cloud repository 
+
+>>>>  Git always works as branches by default it is master branch , if different people wants to work on the same project             	then they have to create a different branch for that
+

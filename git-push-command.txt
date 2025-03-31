@@ -1,0 +1,3 @@
+git push -u origin master 
+
+this command pushes your local master branch to the master branch of the remote repository named origin. The -u flag sets the upstream branch, so future pushes or pulls can be done without specifying branch names. This simplifies syncing your local and remote branches. Let me know if you'd like further clarification!

@@ -1,0 +1,19 @@
+Purpose:
+.gitignore is a file within a Git repository that specifies files and directories Git should ignore.
+
+This prevents unnecessary files (like temporary files, configuration files, or build artifacts) from being tracked and committed.
+
+Listing Ignored Items:
+You must explicitly list the files and/or directories you want Git to ignore within the .gitignore file.
+
+Examples of Syntax:
+test.txt: Ignores a specific file named "test.txt".
+config.js: Ignores a specific file named "config.js"
+*.txt: Ignores all files with the ".txt" extension.
+!test.txt: Negates the previous rule, meaning "test.txt" will not be ignored, even if a broader pattern would have excluded it.
+folder_name/: Ignores a directory named "folder_name" and all its contents, including nested subdirectories.
+/folder_name: Ignores a directory named "folder_name" only if it's located in the root directory of the repository.
+
+Key points:
+The order of the rules in the .gitignore file can be important, especially when using negation.
+It is good practice to create a .gitignore file at the start of a project, and to add to it as needed.

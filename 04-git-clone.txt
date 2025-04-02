@@ -1,0 +1,10 @@
+git clone <https repository link available under code section>
+ 
+Git clone is used to get remote repositories into our local systems
+
+We should have either access tokens or via collaborators option only we can able to push the changes made in the local to the remote repository
+
+after adding someone as collaborator for our repository they have to accept our invitation before they are proceeding to made changes and try to push.
+
+git clone https://thirumalesu-pullolla@github.com/thirumalesu-pullolla/git-tutorials.git (we should add username@github.com ) for access token type push.
+

@@ -1,0 +1,7 @@
+<git log> command will give you all the commit id's 
+
+<git log --oneline> will give us inshort id's of commits 
+
+git checkout <commitID> will redirect us to previous versions
+
+if we dont want we can switch back (abort this operation) <using git switch ->

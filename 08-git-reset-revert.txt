@@ -1,0 +1,100 @@
+🔁 git revert – Undo by creating a new commit
+✅ Description:
+git revert reverts a commit by creating a new commit that undoes the changes introduced by the specified commit.
+
+✅ Key Characteristics:
+Safe for public/shared branches (like main, master).
+
+Keeps history intact.
+
+Doesn’t delete any commits; instead, it adds a new commit with inverse changes.
+
+✅ Syntax and Usage:
+Revert a specific commit: git revert <commitID>
+Revert the latest commit: git revert HEAD
+Revert the Nth previous commit: git revert HEAD~N
+Revert multiple commits: git revert <commitID1> <commitID2> ...
+Revert without opening editor: git revert <commitID> --no-edit
+This skips the interactive commit message editor and uses the default auto-generated message.
+
+✅ Real-world Use:
+Useful when you pushed changes to a remote repo but now want to undo a bad commit without rewriting history.
+
+🔄 git reset – Move HEAD and optionally modify the working directory
+✅ Description:
+git reset moves the HEAD pointer and optionally affects the staging area and working directory based on the reset mode.
+
+🎯 Modes of git reset:
+1. 🟡 --soft:
+
+git reset --soft <commitID>
+Moves HEAD to the commit.
+
+Keeps changes in staging area.
+
+Commit history after the reset point is erased.
+
+Best for combining multiple commits into one (use with re-commit).
+
+✅ Use case:
+You committed too early. Want to amend or combine commits.
+
+2. 🟠 --mixed (default):
+ 
+git reset <commitID>
+or
+git reset --mixed <commitID>
+Moves HEAD.
+
+Unstages changes (moves them to working directory).
+
+Files remain in your project folder.
+
+Code is not lost, but you'll need to re-add it to stage.
+
+✅ Use case:
+Undo commits and modify the code before recommitting.
+
+3. 🔴 --hard:
+ 
+git reset --hard <commitID>
+Dangerous operation.
+
+Deletes commits after the given commit ID.
+
+Deletes code and changes from working directory and staging.
+
+Irreversible, unless backed up with git reflog.
+
+✅ Use case:
+When you really want to reset everything, even code (e.g., local mistakes, test repos).
+
+✅ Other Related Concepts:
+➤ HEAD:
+Refers to the current commit pointer.
+
+HEAD~1 means 1 commit before HEAD.
+
+You can move HEAD like:
+ 
+git reset HEAD~2
+➤ Files after git reset:
+They remain in your local project folder (unless hard reset).
+
+Files become untracked/unstaged, depending on mode.
+
+⚠️ Reset vs. Revert – Key Differences:
+
+Feature	                git revert	                git reset
+Affects History		No (adds a new commit)			Yes (removes commits)
+Safe for Shared Repo	✅ Yes				❌ No (can rewrite history)
+Keeps Code Changes?	❌ No (reverts changes)		✅ Depends on mode
+Undo Multiple Commits	✅ Yes				✅ Yes
+Editor Prompt		✅ (Optional via --no-edit)	❌ No
+
+🔐 Best Practices:
+Use git revert for safe and collaborative environments.
+
+Use git reset (especially hard) only in local/private branches or when you’re confident.
+
+Always double-check

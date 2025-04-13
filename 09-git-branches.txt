@@ -1,0 +1,15 @@
+Git branches :
+
+Every git repository includes a default branch known as master/main
+
+Branches allow developers to work on different features , bug fixes or experiments simultaneously without disturbing the main code
+
+git branch		List all branches
+
+git branch <name>	Create a new branch
+git checkout <name>	Switch to a branch
+git switch <name>	Alternate way to switch
+git checkout -b <name>	Create and switch to new branch
+git merge <name>	Merge a branch into current
+git branch -d <name>	Delete a branch (if already merged)
+git branch -D <name>	Force delete a branch

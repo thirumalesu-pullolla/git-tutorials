@@ -13,3 +13,10 @@ git checkout -b <name>	Create and switch to new branch
 git merge <name>	Merge a branch into current
 git branch -d <name>	Delete a branch (if already merged)
 git branch -D <name>	Force delete a branch
+
+After intiatalizing a folder as git repository we cannot see git branches 
+We can see git branches only after some commits.
+
+after doing the changes in the branches we have to switch to the branch (mostly master) in which we have to merge changes.
+
+Then use (git merge <working branch name>) to update this changes to master branch.
